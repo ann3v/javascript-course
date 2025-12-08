@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function addArrays(array1, array2){
+            let tempArray = [];
+            for (let i = 0; i < array1.length; i++){
+                tempArray.push(array1[i] + array2[i])
+            }
+            return tempArray;
+        }
+        let firstArray = [1,2,3];
+        let secondArray = [4,5,6];
+
+        console.log(addArrays(firstArray, secondArray));
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="show()">Add to cart</button>
+    <p class="show"></p>
+    <script>
+        let index;
+        let running = false;
+        let text = document.querySelector('.show');
+        function show(){
+            if (!running){
+                text.innerHTML = 'Added';
+                running = true;
+
+                index = setTimeout(function (){
+                text.innerHTML = '';
+                running = false;
+            }, 2000);
+            } else {
+                text.innerHTML = '';
+                clearInterval(index);
+                running = false;
+            }
+            
+        }
+    </script>
+</body>
+</html>

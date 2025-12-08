@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function countPositives(nums){
+            let count = 0;
+            nums.forEach(element => {
+                if (element > 0){
+                    count++
+                } 
+            });
+            return count;
+        }
+
+        let arrayOne = [-8, 15, -2, 4, -11, 9, -1, 6, -20, 13];
+        let arrayTwo = [ -7, 18, -15, 1, -4, 12, -9, 5, -14];
+        let arrayThree = [-6, 3, 2, -19, 7, -3, 11, -16, 8, -10, 17];
+
+        console.log(countPositives(arrayOne));
+        console.log(countPositives(arrayTwo));
+        console.log(countPositives(arrayThree));
+    </script>
+</body>
+</html>

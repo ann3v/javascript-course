@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function removeEgg(foods){
+             let result = foods.filter((value) => {
+               /* if (value === 'egg'){
+                    return false;
+                } else {
+                    return true;
+                } */
+               return value != 'egg';
+            })
+            return result;
+        }
+
+        let foods = ['egg', 'beef', 'bread', 'egg'];
+        console.log(removeEgg(foods))
+    </script>
+</body>
+</html>

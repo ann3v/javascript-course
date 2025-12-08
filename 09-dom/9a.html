@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>9a</button>
+    <button class="done" onclick="changeText()">9b</button>
+    <script>
+        let button = document.querySelector('button');
+        console.log(button);
+
+        let done = document.querySelector('.done')
+        function changeText(){
+            if (done.innerHTML === '9b'){
+                done.innerHTML = '9b done'
+            } else {
+                done.innerHTML = '9b'
+            }
+
+        }
+    </script>
+</body>
+</html>

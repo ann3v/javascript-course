@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      function findIndex(array, word) {
+        for (let i = 0; i < array.length; i++) {
+          if (array[i] === word) {
+            return i;
+          }
+        }
+        return -1;
+      }
+
+      
+      function unique(array){
+        const result = [];
+        for (let i = 0; i < array.length; i++){
+        const word = array[i];
+
+        if (findIndex(result, word) === -1){
+                result.push(word)
+            }
+        }
+        return result;
+      }
+      let uniquee = ['red','green','blue','green','blue'];
+
+      console.log(unique(uniquee));
+    </script>
+  </body>
+</html>

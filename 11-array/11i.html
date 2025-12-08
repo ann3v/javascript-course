@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function addOne(array, num){
+            let tempArray = [];
+            for (let i = 0; i < array.length; i++){
+                array[i] = array[i] + num;
+                tempArray.push(array[i]);
+            }
+            return tempArray;
+        }
+        let firstArray = [1,2,3];
+        let secondArray = [-192,34,765]
+        console.log(addOne(firstArray, 3));
+        console.log(addOne(secondArray, 4));
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="text" onkeyup="showText()">
+    <p class="show"></p>
+    <script>
+        let valuee = document.querySelector('.text')
+        let text = document.querySelector('.show')
+        function showText(){
+            text.innerHTML = valuee.value;
+        }
+    </script>
+</body>
+</html>

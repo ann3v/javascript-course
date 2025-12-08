@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .amazon {
+        background-color: rgb(255, 216, 20);
+        color: black;
+        padding: 3px 20px ;
+        border-radius: 40px;
+        border: none;
+    }
+
+    .request {
+        background-color: black;
+        color: rgb(242, 242, 242);
+        padding: 3px 20px ;
+        border-radius: 40px;
+        border: none;
+    }
+
+    .schedule {
+        background-color: rgb(230, 230, 230);
+        color:rgb(19, 19, 19);
+        padding: 3px 20px ;
+        border-radius: 40px;
+        border: none;
+    }
+</style>
+<body>
+    <button class="js-button">Test</button>
+    <button class="amazon">Add to Cart</button>
+    <button class="request">Request Now</button>
+    <button class="schedule">Schedule for later</button>
+    <script>
+        console.log(document.querySelector('button').classList.contains('js-button'))
+    </script>
+</body>
+</html>

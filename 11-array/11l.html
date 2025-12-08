@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function minMax(nums){
+            let result = {};
+
+            if (!nums || nums.length === 0) {
+                result.min = null;
+                result.max = null;
+                return result;
+            }
+
+            let min = nums[0];
+            let max = nums[0];
+
+            for (let i = 1; i < nums.length; i++){
+                if (min > nums[i]){
+                    min = nums[i];
+                }
+
+                if (max < nums[i]){
+                    max = nums[i];
+                }
+
+            }
+            result.min = min;
+            result.max = max;
+            return result;
+        }
+
+        let array = [-100, 30 ,40 , 900 ,1 ,-999];
+        console.log(minMax(array));
+    </script>
+</body>
+</html>
